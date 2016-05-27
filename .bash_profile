@@ -4,6 +4,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh1'
 alias wp='cd wp-content/'
+alias wpt='cd wp-content/themes/'
 alias wpg='cd wp-content/wp-gulp && gulp'
 alias s='cd ~/Sites'
 function md () { mkdir -p "$@" && cd "$@"; }
