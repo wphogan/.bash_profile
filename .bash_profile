@@ -119,6 +119,13 @@ POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 ## MY Alias
 function md () { mkdir -p "$@" && cd "$@"; }
+function md () { mkdir -p "$@" && cd "$@"; }
+# function test_script () { echo  "$2" && echo "$1"; }
+function dc () { docker-compose "$@"; }
+function dcup () {  docker kill $(docker ps -q) && docker-compose up; }
+function dckill () { docker kill $(docker ps -q); }
+function rst () { make && ./httpd myconfig.ini; }
+
 alias s='cd ~/Sites'
 alias gsr='cd ~/Google\ Drive/UCSD/GSR'
 alias u='cd ~/Google\ Drive/UCSD'
